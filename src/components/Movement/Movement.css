@@ -1,0 +1,44 @@
+.move_button_container {
+width:100%;
+height: 25%;
+margin-bottom: 0;
+margin-top: 40px;
+display: flex;
+flex-flow: row nowrap;
+align-content: space-evenly;
+border: solid black;
+}
+
+.direction_button {
+width:33%;
+height:100%;
+text-align: center;
+background-color: grey;
+/* border: solid black; */
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+}
+
+.direction_button:hover {
+background-color: black;
+border: solid grey; 
+}
+
+.northsouth_buttons_container {
+width: 34%;
+height: 48.5%;
+}
+
+.northsouth_buttons_container .direction_button {
+width:100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+
+

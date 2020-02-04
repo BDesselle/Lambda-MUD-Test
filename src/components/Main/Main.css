@@ -1,0 +1,36 @@
+.theBigOne {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.backgroundThing {
+  width: 66%;
+  height: 60vh;
+}
+
+.movement {
+  width: 100%;
+}
+
+#modal {
+  position: absolute;
+  z-index: 100;
+  width: 80%;
+  height: 95vh;
+  padding-right: 20px;
+  padding-top: 10px;
+  margin-left:60px;
+  background-color: black;
+  flex-direction: row-reverse;
+}
+
+.close {
+  position: absolute;
+  z-index: 101;
+  width: 20px;
+}
+
+.close:hover{
+  background-color: red;
+}

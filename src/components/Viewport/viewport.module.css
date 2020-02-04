@@ -1,0 +1,21 @@
+#container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#canvas1 {
+  position: absolute;
+  z-index: 1;
+}
+
+#canvas2 {
+  position: absolute;
+  z-index: 2;
+}
+
+#canvas3 {
+  position: absolute;
+  z-index: 3;
+}

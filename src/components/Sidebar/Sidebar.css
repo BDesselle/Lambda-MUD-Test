@@ -1,0 +1,29 @@
+.sidebar {
+    height:95vh;
+    width: 32%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.textbox {
+    width:100%;
+    height: 50%;
+    font-size: 20px;
+    overflow: auto;
+    
+}
+
+.textbox::-webkit-scrollbar { 
+    width: 0 !important 
+}
+
+.map_button {
+    width: 25%;
+    margin-top: 50px;
+    border-radius: 5px;
+    background-color: brown;
+}
+.map_button:hover {
+    background-color: black;
+}
