@@ -10,7 +10,7 @@ const MapModal = props => {
     const [map, setMap] = useState([])
 
     useEffect(_ => {
-        axiosWithAuth().get('https://lambda-mud-test.herokuapp.com/api/adv/rooms/')
+        axiosWithAuth().get('https://lambda-cs25-mud.herokuapp.com/api/adv/rooms/')
             .then(res => {
                 const sorted = res.data.sort((first, second) => second.title.split(' ')[3] - first.title.split(' ')[3]),
                     tens = []

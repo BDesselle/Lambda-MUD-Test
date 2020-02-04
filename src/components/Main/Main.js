@@ -18,7 +18,7 @@ const Main = () => {
 
   useEffect(_ => {
     axiosWithAuth()
-      .get('https://lambda-mud-test.herokuapp.com/api/adv/init/')
+      .get('https://lambda-cs25-mud.herokuapp.com/api/adv/init/')
       .then(res => dispatch(move(res.data)))
       .catch(err => console.error(err))
       // eslint-disable-next-line

@@ -64,7 +64,7 @@ const Viewport = props => {
 
   useEffect(() => {
     axiosWithAuth()
-      .get('https://lambda-mud-test.herokuapp.com/api/adv/rooms/')
+      .get('https://lambda-cs25-mud.herokuapp.com/api/adv/rooms/')
       .then(res => {
         const roomsData = res.data.map(
           ({ room_id, north, east, south, west, title }) => ({

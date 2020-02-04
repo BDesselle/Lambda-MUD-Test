@@ -59,14 +59,14 @@ const FormikLogin = withFormik({
 
   handleSubmit(values, { setStatus, resetForm, props }) {
     return axios
-      .post(`https://lambda-mud-test.herokuapp.com/api/login/`, values)
+      .post(`https://lambda-cs25-mud.herokuapp.com/api/login/`, values)
       .then(res => {
         setStatus(res.data);
         props.useDispatch(login(values.username))
 
         localStorage.setItem('token', res.data.key)
 
-        axiosWithAuth().get('https://lambda-mud-test.herokuapp.com/api/adv/init/')
+        axiosWithAuth().get('https://lambda-cs25-mud.herokuapp.com/api/adv/init/')
           .then(res => props.useDispatch(move(res.data)))
           .catch(err => console.error(err.response))
 

@@ -10,7 +10,7 @@ const Movement = () => {
 
     let moveWest = () => {
         return axiosWithAuth()
-            .post('https://lambda-mud-test.herokuapp.com/api/adv/move/', { "direction": "w" })
+            .post('https://lambda-cs25-mud.herokuapp.com/api/adv/move/', { "direction": "w" })
             .then(res => {
                 console.log("result of call to move west ", res)
                 dispatch(move(res.data))
@@ -21,7 +21,7 @@ const Movement = () => {
     }
     let moveNorth = () => {
         return axiosWithAuth()
-            .post('https://lambda-mud-test.herokuapp.com/api/adv/move/', { "direction": "n" })
+            .post('https://lambda-cs25-mud.herokuapp.com/api/adv/move/', { "direction": "n" })
             .then(res => {
                 console.log("result of call to move north ", res)
                 dispatch(move(res.data))
@@ -32,7 +32,7 @@ const Movement = () => {
     }
     let moveSouth = () => {
         return axiosWithAuth()
-            .post('https://lambda-mud-test.herokuapp.com/api/adv/move/', { "direction": "s" })
+            .post('https://lambda-cs25-mud.herokuapp.com/api/adv/move/', { "direction": "s" })
             .then(res => {
                 console.log("result of call to move south ", res)
                 dispatch(move(res.data))
@@ -43,7 +43,7 @@ const Movement = () => {
     }
     let moveEast = () => {
         return axiosWithAuth()
-            .post('https://lambda-mud-test.herokuapp.com/api/adv/move/', { "direction": "e" })
+            .post('https://lambda-cs25-mud.herokuapp.com/api/adv/move/', { "direction": "e" })
             .then(res => {
                 console.log("result of call to move east ", res)
                 dispatch(move(res.data))
